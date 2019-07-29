@@ -1,0 +1,258 @@
+body,
+html,
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0px
+}
+
+.map {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    .map-title {
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+
+    .map-start {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background: #57c595;
+        position: fixed;
+        bottom: 70px;
+        left: calc(50%-100px);
+        text-align: center;
+        line-height: 100px;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 20px;
+        box-shadow: 0px 4px 15px #afaeae;
+    }
+
+    .map-tool {
+        width: 290px;
+        height: 35px;
+        position: fixed;
+        top: 110px;
+        left: calc(50%-280px);
+        background: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #afaeae;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            width: 100%;
+            text-align: center;
+            color: #4b4949;
+            font-size: 13px;
+
+            span {
+                margin-left: 5px;
+            }
+        }
+
+        p:nth-child(1) {
+            border-right: 1px solid rgb(182, 180, 180);
+        }
+
+        p:nth-child(2) {
+            border-right: 1px solid rgb(182, 180, 180);
+        }
+    }
+
+    .strat-go {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffffd2;
+        z-index: 10000;
+
+        .strat-go-top {
+            width: 100%;
+            height: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555555;
+            font-size: 17px;
+            vertical-align: bottom;
+            font-style: oblique;
+
+            span {
+                font-size: 100px;
+                font-weight: bold;
+            }
+        }
+
+        .strat-go-detail {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #555555;
+            font-style: oblique;
+            height: 35px;
+
+            p {
+                width: 100%;
+                text-align: center;
+
+                span:nth-child(1) {
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+
+                span:nth-child(3) {
+                    font-size: 12px;
+                    font-style: initial;
+                }
+            }
+        }
+
+        .strat-go-mark {
+            margin-top: 35px;
+        }
+
+        .strat-go-markText {
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+}
+
+#stratGo {
+    transition: all 0.4s;
+    height: 35%;
+    background: #ffffff;
+    box-shadow: 0 2px 25px #afaeae;
+
+    .strat-go-top {
+        margin-top: 6%;
+        font-size: 15px;
+
+        span {
+            font-size: 75px;
+        }
+    }
+
+    .strat-go-detail {
+        margin-top: 7%;
+
+        p {
+            width: 100%;
+            text-align: center;
+
+            span:nth-child(1) {
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            span:nth-child(3) {
+                font-size: 12px;
+                font-style: initial;
+            }
+        }
+    }
+}
+
+.buttonDom {
+    width: 88px;
+    height: 35px;
+    position: fixed;
+    top: 100px;
+    left: 240px;
+    background: transparent;
+}
+
+.popupText {
+    // width: 00px;
+    min-height: 100px;
+    background: #ffffff;
+    padding: 10px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+#map {
+    width: 100%;
+    height: calc(100%+50px);
+    box-sizing: border-box;
+}
+
+.fadeStart-enter {
+    transform: translateY(-100%);
+}
+
+.fadeStart-enter-to {
+    transform: translateY(0);
+}
+
+.fadeStart-enter-active {
+    transition: all 0.4s;
+}
+
+.strat-go {
+    .md-field {
+        background: transparent;
+    }
+
+    .md-field-item-content:before {
+        background: #4b4949;
+    }
+
+    .md-field-item.is-solid .md-field-item-title {
+        width: 10vw;
+    }
+}
+
+.amap-logo img {
+    display: none;
+}
+
+.amap-copyright {
+    display: none !important;
+}
+
+.icon-icon-test12 {
+    position: absolute;
+    top: 23px;
+    right: 8px;
+    font-size: 33px;
+    z-index: 4;
+}
+
+.searchinp {
+    width: 7.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #fff;
+}
+
+.routecontent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    line-height: 50px;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    z-index: 5;
+    text-indent: 2em;
+    overflow-y: scroll;
+}

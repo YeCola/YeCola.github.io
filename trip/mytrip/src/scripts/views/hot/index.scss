@@ -1,0 +1,57 @@
+.hot{
+    width: 100%;
+    height: 100%;
+
+    .head {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .hot-body {
+        overflow-y: scroll;
+        height: 620px;
+        .title{
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            background-color: #fff;
+            margin-top: 10px;
+            border-bottom: 2px solid rgba(243, 243, 243, 1);
+        }
+        ul{
+            padding: 0 .42rem 0 .31rem;
+            background-color: #fff;
+            li{
+                width: 100%;
+                height: 2.5rem;
+                .lidiv{
+                    float:left;
+                    width: 50%;
+                    height: 2.5rem;
+                    border-right:1px solid rgb(218, 218, 218);
+                    .content{
+                        position: relative;
+                        font-size: 14px;
+                        color:#858585;
+                        line-height: 25px;
+                        .dot {
+                            color: #d4cccc;
+                            position: absolute;
+                            top: 0px;
+                            right:-37px;
+                            font-size: 24px;
+                        }
+                    }
+                    
+                }
+                img{
+                    float:right;
+                    width: 150px;
+                    height: 100px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

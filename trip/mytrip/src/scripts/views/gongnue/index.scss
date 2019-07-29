@@ -1,0 +1,145 @@
+.lv {
+    width: 100%;
+    height: 100%;
+
+    .head {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .lv-body {
+        overflow-y: scroll;
+        height: 620px;
+
+        .lv-img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .recommend {
+            width: 100%;
+            margin-top: 15px;
+
+            .all {
+                width: 100%;
+                height: 50px;
+                box-sizing: border-box;
+                line-height: 50px;
+                padding: 0 18px;
+                background-color: #fff;
+                border-bottom: 2px solid rgba(243, 243, 243, 1);
+
+                span:nth-child(2) {
+                    font-size: 10px;
+                    color: rgba(161, 161, 166, 1);
+                    margin-left: 4.4rem;
+                }
+            }
+
+            li {
+                padding: 0 .3rem;
+                width: 100%;
+                height: 100px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: space-between;
+                background-color: #fff;
+                border-bottom: 2px solid rgba(243, 243, 243, 1);
+
+                div {
+                    width: 60%;
+
+                    .title {
+                        line-height: 40px;
+                        font-size: 18px;
+                    }
+
+                    .content {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #999;
+                    }
+                }
+
+                img {
+                    width: 30%;
+                    height: 80px;
+                    margin-top: 10px;
+                }
+            }
+
+            .main {
+                .title {
+                    width: 100%;
+                    height: 50px;
+                    box-sizing: border-box;
+                    line-height: 50px;
+                    padding: 0 18px;
+                    background-color: #fff;
+                    border-bottom: 2px solid rgba(243, 243, 243, 1);
+                    text-align: center;
+                }
+
+                .youji {
+                    width: 94%;
+                    padding: 0 3%;
+                    height: 300px;
+                    background-color: #fff;
+                    padding-top: 10px;
+
+                    .youji-lv {
+                        height: 190px;
+                        background-image: url("../../../assets/img/youji.png");
+                        position: relative;
+                        background-position: 0 30%;
+
+                        .bigshadow {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-color: rgba(0, 0, 0, .1);
+                        }
+
+                        .shadow {
+                            width: 100%;
+                            height: 40px;
+                            line-height: 40px;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            background-color: rgba(0, 0, 0, .5);
+                            color: #fff;
+                            font-size: 18px;
+                        }
+                    }
+
+                    .youji-tui {
+                        margin-top: .15rem;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        border-top: 2px solid rgba(243, 243, 243, 1);
+
+                        .tui-content {
+                            width: 48%;
+                            
+                            .tui-title {
+                                height: 60px;
+                                line-height: 30px;
+                            }
+                            .tui-main{
+                                height: 40px;
+                                line-height: 40px;
+                                font-size: 14px;
+                                color:#999;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

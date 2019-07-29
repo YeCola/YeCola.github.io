@@ -1,0 +1,47 @@
+
+
+@import "./fonts/iconfont.css";
+@import "animate.css";
+@import "common";
+@import "antd-mobile.css";
+
+
+$base_color:yellowgreen;
+
+html,body,#app,#main ,#box{
+    width:100vw;
+    height:100vh;
+    touch-action:none;
+}
+
+
+.color{
+    color:$base_color
+}
+
+.box{
+    width:200px;
+    height:200px;  /*no*/
+    border:2px solid darkorchid; /*no*/
+}
+
+.btn{
+    border:none;
+    outline: none;
+    color:darkorchid;
+    // box-shadow: 10px 10px 10px  #0f0;
+    padding:0 10px;  /*no*/
+    font-size:30px; /*no*/
+    background: pink;
+    display: inline-block;
+    border-radius: 10px; /*no*/
+}
+
+.enter{
+    animation: zoomIn 1.5s;
+}
+
+
+.leave{
+    animation:  zoomOutDown .8s;
+}

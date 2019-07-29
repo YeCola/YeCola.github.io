@@ -1,0 +1,15 @@
+
+
+
+.road{
+    width: 100vw;
+    height:100vh;
+    background-image: url("../../../assets/img/bg.png");
+    background-size:100% 100%;
+    opacity: .9;
+    position: fixed;
+}
+.maincontent{
+    height: 620px;
+    overflow-y: scroll;
+}

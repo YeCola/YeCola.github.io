@@ -1,0 +1,92 @@
+.trip {
+    width: 100%;
+    height: 100%;
+    // position: relative;
+
+    .trip-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    }
+
+    .trip-con {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .trip-border {
+        width: 230px;
+        height: 230px;
+        border-radius: 230px;
+        margin: 50px auto;
+        border: 4px dashed #c5d1d3;
+        border-bottom: none;
+
+        p:nth-child(1) {
+            text-align: center;
+            margin-top: 40px;
+            color: #4e4956;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        strong {
+            display: block;
+            text-align: center;
+            margin-top: 17px;
+            color: #4e4956;
+            font-size: 65px;
+        }
+
+        p:nth-child(3) {
+            text-align: center;
+            margin-top: 17px;
+            color: #9a9b9b;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .trip-start {
+            width: 230px;
+            height: 45px;
+            border-radius: 45px;
+            margin: auto;
+            background: #57c595;
+            text-align: center;
+            line-height: 45px;
+            color: #ffffff;
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin-top: 90px;
+        }
+    }
+
+    .trip-map {
+        widows: 100%;
+        height: 100%;
+    }
+}
+
+
+.fademap-enter {
+    opacity: 0;
+}
+
+.fademap-enter-active {
+    transition: all 0.3s;
+}
+
+.fademap-leave-to {
+    opacity: 0;
+}
+
+.fademap-leave-active {
+    transition: all 0.3s;
+}
